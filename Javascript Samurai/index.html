@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <!--Big Red Box Div-->
+    <div style="position: relative; display: inline-block;">
+        <!--Small Red Box Div-->
+        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+            <!--Player Parent Class-->
+            <div style="position:relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                <!--Player Health-->
+                <div style="background-color: yellow; height: 30px; width: 100%"> </div>
+                <div id="playerHealth" style="position: absolute; background: blue;top: 0; right: 0; bottom: 0; width: 100%;"></div>
+            </div>
+            <!--Timer-->
+            <div id="timer" style="background-color: red; height: 100px; width: 100px; flex-shrink: 0; 
+            display: flex; align-items: center; justify-content: center;">100</div>
+            <!--Enemy Parent Class-->
+            <div style="position:relative; height: 30px; width: 100%">
+                <!--Enemy Health-->
+                <div style="background-color: yellow; height: 30px"> </div>
+                <div id="enemyHealth" style="position: absolute; background: blue;top: 0; right: 0; bottom: 0; left: 0;"></div>
+            </div>
+        </div>
+        <canvas></canvas> 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
